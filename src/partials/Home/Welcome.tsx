@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 
 import balloon from '../../assets/balloon.png';
@@ -6,6 +7,7 @@ import Container from "../../components/Container";
 import Button from "../../components/Button";
 
 const Welcome = () => {
+
     return (
         <section className="bg-yellow-500 border-b border-b-gray-600">
             <Container className="flex flex-row justify-between items-center">

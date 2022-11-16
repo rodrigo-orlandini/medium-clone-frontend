@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 
 interface ContainerProps {
     children: ReactNode;
@@ -7,10 +7,13 @@ interface ContainerProps {
 
 const Container = ({ children, className="" }: ContainerProps ) => {
     return (
-        <div className={`
-            max-w-[1124px] mx-auto ${className}
-            max-[1280px]:max-w-[90%]
-        `}>
+        <div 
+            className={`
+                max-w-[1124px] mx-auto ${className}
+                max-[1280px]:max-w-[90%]
+            `}
+            data-testid="container"
+        >
             { children }
         </div>
     );
